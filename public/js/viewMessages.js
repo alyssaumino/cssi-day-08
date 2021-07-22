@@ -6,7 +6,9 @@ const getMessages = () => {
     messagesRef.on("value", (snapshot) => {
         const data = snapshot.val()
         console.log(data)
-
+        for(let key in data) {
+            console.log(key, data[key])
+        }
     })
 
 }
