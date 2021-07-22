@@ -10,6 +10,8 @@ const getMessages = () => {
             console.log(key, data[key])
             if(key === passcode.value) {
                 console.log("match")
+                const message = document.querySelector("#message")
+                message.innerHTML = data[key]
             }
         }
     })
